@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: asteroid-alerting-service
+  kafka:
+    bootstrap-servers: ${BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+kafka:
+  topic:
+    asteroid-threats: ${KAFKA_TOPIC:asteroid-threats}
+
+# NASA API Configuration
+nasa:
+  api:
+    key: ${NASA_API_KEY:your_nasa_api_key}
+    url: https://api.nasa.gov/neo/rest/v1/feed
+
+# NEO Check Configuration
+neo:
+  check:
+    days_ahead: 7
+
+notification:
+  miss_distance:
+    threshold:
+      km: 5000000
+
+# Scheduled Task Configuration
+scheduler:
+  cron:
+    expression: 0 0 12 * * ?  # Runs daily at noon
+
+# Logging Configuration
+logging:
+  level:
+    dev.sagar.astro: INFO
+    org.springframework.web: INFO
+    org.springframework.kafka: INFO
