@@ -56,3 +56,6 @@ logging:
     dev.sagar.astro: INFO
     org.springframework.kafka: INFO
     org.hibernate: ERROR
+
+server:
+    port: ${SERVER_PORT:8081}
