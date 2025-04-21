@@ -32,7 +32,7 @@ services:
       - asteroid-network
 
   kafka:
-    image: apache/kafka-native
+    image: apache/kafka-native:4.0.0
     container_name: asteroid-kafka
     ports:
       - "9092:9092"
@@ -62,6 +62,15 @@ services:
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9093
     depends_on:
       - kafka
+    networks:
+      - asteroid-network
+  
+  maildev:
+    image: maildev/maildev:2.2.1
+    container_name: asteroid-maildev
+    ports:
+      - "1080:80"
+      - "1025:25"
     networks:
       - asteroid-network
 
