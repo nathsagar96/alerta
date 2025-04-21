@@ -69,8 +69,8 @@ services:
     image: maildev/maildev:2.2.1
     container_name: asteroid-maildev
     ports:
-      - "1080:80"
-      - "1025:25"
+      - "1080:1080"
+      - "1025:1025"
     networks:
       - asteroid-network
 
