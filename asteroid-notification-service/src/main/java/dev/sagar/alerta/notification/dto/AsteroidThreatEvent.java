@@ -1,4 +1,4 @@
-package dev.sagar.astro.notification.dto;
+package dev.sagar.alerta.notification.dto;
 
 import java.time.LocalDate;
 import lombok.AllArgsConstructor;

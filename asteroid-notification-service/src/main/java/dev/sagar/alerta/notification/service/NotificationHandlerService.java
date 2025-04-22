@@ -1,8 +1,8 @@
-package dev.sagar.astro.notification.service;
+package dev.sagar.alerta.notification.service;
 
-import dev.sagar.astro.notification.dto.AsteroidThreatEvent;
-import dev.sagar.astro.notification.entity.AsteroidAlertEntity;
-import dev.sagar.astro.notification.repository.AsteroidAlertRepository;
+import dev.sagar.alerta.notification.dto.AsteroidThreatEvent;
+import dev.sagar.alerta.notification.entity.AsteroidAlertEntity;
+import dev.sagar.alerta.notification.repository.AsteroidAlertRepository;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

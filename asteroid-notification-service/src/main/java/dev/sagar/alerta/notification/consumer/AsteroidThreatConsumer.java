@@ -1,7 +1,7 @@
-package dev.sagar.astro.notification.consumer;
+package dev.sagar.alerta.notification.consumer;
 
-import dev.sagar.astro.notification.dto.AsteroidThreatEvent;
-import dev.sagar.astro.notification.service.NotificationHandlerService;
+import dev.sagar.alerta.notification.dto.AsteroidThreatEvent;
+import dev.sagar.alerta.notification.service.NotificationHandlerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;

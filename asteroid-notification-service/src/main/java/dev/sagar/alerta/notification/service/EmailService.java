@@ -1,6 +1,6 @@
-package dev.sagar.astro.notification.service;
+package dev.sagar.alerta.notification.service;
 
-import dev.sagar.astro.notification.entity.AsteroidAlertEntity;
+import dev.sagar.alerta.notification.entity.AsteroidAlertEntity;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import java.text.DecimalFormat;

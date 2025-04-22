@@ -1,4 +1,4 @@
-package dev.sagar.astro.notification.entity;
+package dev.sagar.alerta.notification.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
