@@ -1,4 +1,4 @@
-# 🌠 Astro Alert
+# 🌠 Alerta
 
 A distributed microservices application that monitors near-Earth objects (NEOs), identifies potential threats, and
 delivers timely notifications about hazardous asteroids.
@@ -33,7 +33,7 @@ delivers timely notifications about hazardous asteroids.
 
 ## 📝 Description
 
-The Astro Alert is a real-time monitoring solution that connects to NASA's Near-Earth Object Web Service (NeoWs) to
+The Alerta is a real-time monitoring solution that connects to NASA's Near-Earth Object Web Service (NeoWs) to
 track potentially hazardous asteroids that might pose a threat to Earth. By leveraging distributed microservices
 architecture with Apache Kafka for messaging, this system provides a robust pipeline for asteroid threat detection and
 notification.
@@ -84,8 +84,8 @@ The system consists of two primary microservices:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nathsagar96/astro-alert.git
-   cd astro-alert
+   git clone https://github.com/nathsagar96/alerta.git
+   cd alerta
    ```
 
 2. Start the required infrastructure (PostgreSQL, Kafka) using Docker Compose:
@@ -213,7 +213,7 @@ The system integrates with NASA's Near Earth Object Web Service:
 
 ## 🤝 Contributing
 
-Contributions to improve the Astro Alert are welcome! Here's how you can contribute:
+Contributions to improve the Alerta are welcome! Here's how you can contribute:
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`

@@ -1,7 +1,7 @@
 services:
   postgres:
     image: postgres:17-alpine
-    container_name: asteroid-postgres
+    container_name: alerta-postgres
     environment:
       POSTGRES_DB: asteroiddb
       POSTGRES_USER: postgres
@@ -16,11 +16,11 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - asteroid-network
+      - alerta-network
   
   pgadmin:
     image: dpage/pgadmin4:latest
-    container_name: asteroid-pgadmin
+    container_name: alerta-pgadmin
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: admin
@@ -29,11 +29,11 @@ services:
     depends_on:
       - postgres
     networks:
-      - asteroid-network
+      - alerta-network
 
   kafka:
     image: apache/kafka-native:4.0.0
-    container_name: asteroid-kafka
+    container_name: alerta-kafka
     ports:
       - "9092:9092"
     environment:
@@ -49,11 +49,11 @@ services:
     volumes:
       - kafka-data:/var/lib/kafka/data
     networks:
-      - asteroid-network
+      - alerta-network
 
   kafka-ui:
     image: kafbat/kafka-ui:main
-    container_name: asteroid-kafka-ui
+    container_name: alerta-kafka-ui
     ports:
       - "8090:8080"
     environment:
@@ -63,19 +63,19 @@ services:
     depends_on:
       - kafka
     networks:
-      - asteroid-network
+      - alerta-network
   
   maildev:
     image: maildev/maildev:2.2.1
-    container_name: asteroid-maildev
+    container_name: alerta-maildev
     ports:
       - "1080:1080"
       - "1025:1025"
     networks:
-      - asteroid-network
+      - alerta-network
 
 networks:
-  asteroid-network:
+  alerta-network:
     driver: bridge
 
 volumes:
