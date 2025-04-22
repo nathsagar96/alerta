@@ -1,4 +1,4 @@
-package dev.sagar.astro;
+package dev.sagar.alerta;
 
 import org.springframework.boot.SpringApplication;
 

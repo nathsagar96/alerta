@@ -1,4 +1,4 @@
-package dev.sagar.astro;
+package dev.sagar.alerta;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

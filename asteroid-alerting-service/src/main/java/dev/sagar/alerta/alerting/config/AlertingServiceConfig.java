@@ -1,4 +1,4 @@
-package dev.sagar.astro.alerting.config;
+package dev.sagar.alerta.alerting.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,9 +1,9 @@
-package dev.sagar.astro.alerting.task;
+package dev.sagar.alerta.alerting.task;
 
-import dev.sagar.astro.alerting.dto.AsteroidThreatEvent;
-import dev.sagar.astro.alerting.dto.nasa.CloseApproachData;
-import dev.sagar.astro.alerting.dto.nasa.NearEarthObject;
-import dev.sagar.astro.alerting.service.NasaNeoService;
+import dev.sagar.alerta.alerting.dto.AsteroidThreatEvent;
+import dev.sagar.alerta.alerting.dto.nasa.CloseApproachData;
+import dev.sagar.alerta.alerting.dto.nasa.NearEarthObject;
+import dev.sagar.alerta.alerting.service.NasaNeoService;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;

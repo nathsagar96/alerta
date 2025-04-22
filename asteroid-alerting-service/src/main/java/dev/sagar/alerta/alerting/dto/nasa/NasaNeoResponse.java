@@ -1,4 +1,4 @@
-package dev.sagar.astro.alerting.dto.nasa;
+package dev.sagar.alerta.alerting.dto.nasa;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;

@@ -1,7 +1,7 @@
-package dev.sagar.astro.alerting.service;
+package dev.sagar.alerta.alerting.service;
 
-import dev.sagar.astro.alerting.dto.nasa.NasaNeoResponse;
-import dev.sagar.astro.alerting.dto.nasa.NearEarthObject;
+import dev.sagar.alerta.alerting.dto.nasa.NasaNeoResponse;
+import dev.sagar.alerta.alerting.dto.nasa.NearEarthObject;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Collections;
